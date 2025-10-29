@@ -88,12 +88,3 @@
    * Input: `1 to 20`
    * Output: `4 16`
    * ✨ *Encourages combining two conditions within one loop.*
-
----
-
-5. **Challenge: Print numbers from 1 to N in this pattern → 1, 3, 6, 10, 15 …**
-   (Each number is the running sum of all previous numbers.)
-
-   * Input: `5`
-   * Output: `1 3 6 10 15`
-   * ✨ *Introduces cumulative logic and reinforces the idea of state carried between iterations.*
