@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 4</title>
+</head>
+<body>
+    <pre>
+Check if a Character is a Vowel or Consonant
+
+Input: e
+Output: Vowel
+    </pre>
+
+    <p>Enter number of units consumed:</p>
+    <input type="text" id="user_input" />
+    <button onclick="checkVowel()">check</button>
+
+    <script>
+        function checkVowel() {
+            const userInput = document.getElementById("user_input").value;
+            const vowels = ['a', 'e', 'i', 'o', 'u'];
+            
+            if(vowels.includes(userInput.toLowerCase())) {
+                alert(`${userInput} is a vowel`);
+            } else {
+                alert(`${userInput} is not a vowel`);
+            }
+        }
+    </script>
+</body>
+</html>

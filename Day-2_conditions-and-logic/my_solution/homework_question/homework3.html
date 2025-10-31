@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 3</title>
+  </head>
+  <body>
+    <h1>Homework 3</h1>
+    <pre>
+Calculate Income Tax Based on Slabs
+Input: Income = ₹7,50,000
+
+Output: Tax = ₹52,500
+
+✨ Applies progressive slab logic similar to electricity bill but with financial context.
+
+Example Logic (example slabs):
+
+Up to ₹2,50,000 → No tax
+₹2,50,001 – ₹5,00,000 → 5%
+₹5,00,001 – ₹10,00,000 → 20%
+Above ₹10,00,000 → 30%
+🔍 Requires cumulative calculation using nested if–else or multiple slab loops.
+    </pre>
+
+    <input type="number" id="user_input" />
+    <button onclick="calculateTax()">check</button>
+
+    <script>
+      function calculateTax() {
+        let income = document.getElementById("user_input").value;
+        let tax = 0;
+
+        if (income > 1000000) {
+          tax += (income - 1000000) * 0.3;
+          income = 1000000;
+        }
+
+        if (income > 500000) {
+          tax += (income - 500000) * 0.2;
+          income = 500000;
+        }
+
+        if (income > 250000) {
+          tax += (income - 250000) * 0.05;
+          income = 250000;
+        }
+
+        alert("Tax: "+ tax);
+      }
+
+    </script>
+  </body>
+</html>
