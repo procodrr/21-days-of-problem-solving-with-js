@@ -102,7 +102,7 @@
 3. **Calculate Income Tax Based on Slabs**
 
 * **Input:** `Income = ₹7,50,000`
-* **Output:** `Tax = ₹52,500`
+* **Output:** `Tax = ₹62,500`
 * ✨ *Applies progressive slab logic similar to electricity bill but with financial context.*
 * Example Logic (example slabs):
 
