@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 1</title>
+  </head>
+  <body>
+    <h1>Homework 1</h1>
+    <pre>
+Check if a Character is Uppercase, Lowercase, Digit, or Special Character
+
+Input: A
+Output: Uppercase Letter
+✨ Teaches use of character code ranges (charCodeAt) and compound logical conditions.
+🔍 Concepts: ASCII range checks, compound && and || operators.
+    </pre>
+
+    <input type="text" id="user_input" />
+    <button onclick="checkChar()">check</button>
+
+    <script>
+      function checkChar() {
+        const char = document.getElementById("user_input").value;
+
+        const asciCode = char.charCodeAt();
+        if (asciCode >= 48 && asciCode <= 57) {
+          alert("Number");
+        } else if (
+          (asciCode >= 58 && asciCode <= 64) ||
+          (asciCode >= 91 && asciCode <= 96) ||
+          (asciCode >= 123 && asciCode <= 126) ||
+          (asciCode >= 33 && asciCode <= 47)
+        ) {
+          alert("Special Character");
+        } else if (asciCode >= 65 && asciCode <= 90) {
+          alert("Uppercase");
+        } else if (asciCode >= 97 && asciCode <= 122) {
+          alert("Lowercase");
+        }
+      }
+    </script>
+  </body>
+</html>
