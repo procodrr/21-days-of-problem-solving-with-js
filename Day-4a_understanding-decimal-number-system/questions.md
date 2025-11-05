@@ -32,7 +32,7 @@
 
    * Input: `N = 5.75`
    * Output: `Whole = 5, Fraction = 0.75`
-   * ✨ *Use mathematical logic to separate the integer and fractional portions without using built-in functions.*
+   * ✨ *Use mathematical logic to separate the integer and fractional portions without using built-in functions. Don't use `Math.trunc()` method.*
 
 ---
 
