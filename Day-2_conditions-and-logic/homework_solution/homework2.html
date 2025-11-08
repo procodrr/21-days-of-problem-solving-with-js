@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 2</title>
+  </head>
+  <body>
+    <h1>Homework 2</h1>
+    <pre>
+Check Triangle Type Using Sides and Angles
+Input: Sides = 3, 4, 5
+
+Output: Right-Angled Triangle
+
+✨ Combines geometric reasoning + Pythagoras theorem check.
+
+Example Logic:
+
+If a² + b² = c² → Right-angled
+Else if all sides equal → Equilateral
+Else if any two equal → Isosceles
+Else → Scalene
+    </pre>
+
+    <script>
+      function typeOfTriangle(a, b, c) {
+        const sq = (x) => Math.round(x ** 2);
+        const isRightAngled =
+          sq(a) + sq(b) === sq(c) ||
+          sq(b) + sq(c) === sq(a) ||
+          sq(c) + sq(a) === sq(b);
+        const isEquilateral = a === b && b === c;
+        const isIsosceles = a === b || b === c || c === a;
+
+        if (isRightAngled && isIsosceles) {
+          alert("It is a right-angled isosceles triangle");
+        } else if (isRightAngled) {
+          alert("It is a right-angled triangle");
+        } else if (isEquilateral) {
+          alert("It is a equilateral triangle");
+        } else if (isIsosceles) {
+          alert("It is a isosceles triangle");
+        } else {
+          alert("It is a scalene triangle");
+        }
+      }
+
+      typeOfTriangle(3, 4, 5); // Right-angled triangle
+      typeOfTriangle(10, 10, 14.14); // Right-angled isosceles triangle
+      typeOfTriangle(5, 5, 5); // Equilateral triangle
+      typeOfTriangle(6, 6, 8); // Isosceles triangle
+      typeOfTriangle(4, 6, 7); // Scalene triangle
+    </script>
+  </body>
+</html>
