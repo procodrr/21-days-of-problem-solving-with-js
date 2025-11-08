@@ -7,6 +7,7 @@
 const n = 9483;
 
 function findSmallest_And_Largest(n) {
+  /*
   let digits = [];
   while (n !== 0) {
     let lastDigit = Math.floor(n % 10);
@@ -28,6 +29,16 @@ function findSmallest_And_Largest(n) {
   //   digits.sort();
 
   return { largest: digits[digits.length - 1], smallest: digits[0] };
+  */
+  let max = 0;
+  let min = 0;
+  while (n > 0) {
+      const digit = n % 10
+      if (digit > max) max = digit
+      if (digit < min) min = digit
+      n = Math.floor(n / 10)
+  }
+  return { maxNum: max, minNum: min }
 }
 
 console.log(findSmallest_And_Largest(n));
