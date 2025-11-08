@@ -102,7 +102,7 @@
 3. **Calculate Income Tax Based on Slabs**
 
 * **Input:** `Income = ₹7,50,000`
-* **Output:** `Tax = ₹52,500`
+* **Output:** `Tax = ₹62,500`
 * ✨ *Applies progressive slab logic similar to electricity bill but with financial context.*
 * Example Logic (example slabs):
 
@@ -111,18 +111,3 @@
   * ₹5,00,001 – ₹10,00,000 → 20%
   * Above ₹10,00,000 → 30%
 * 🔍 *Requires cumulative calculation using nested `if–else` or multiple slab loops.*
-
----
-
-4. **Calculate Electricity Bill**
-
-* Input: `Units = 230`
-* Output: `Total Bill = ₹1500`
-* ✨ *Applies multiple ranges using chained `else if` and cumulative logic.*
-* Example Logic:
-
-  * 0–100 units → ₹5 per unit
-  * 101–200 units → ₹7 per unit
-  * 201–300 units → ₹10 per unit
-  * Above 300 units → ₹12 per unit
-* 🔍 *Teaches:* cumulative calculation + condition chaining.

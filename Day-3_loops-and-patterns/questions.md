@@ -198,7 +198,7 @@
 
 5. **Print Hollow Diamond Pattern**
 
-   * Input: `Rows = 5`
+   * Input: `Rows = 3`
    * Output:
 
      ```
