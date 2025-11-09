@@ -31,7 +31,7 @@ function findSmallest_And_Largest(n) {
   return { largest: digits[digits.length - 1], smallest: digits[0] };
   */
   let max = 0;
-  let min = 0;
+  let min = 9;
   while (n > 0) {
       const digit = n % 10
       if (digit > max) max = digit
