@@ -67,5 +67,25 @@ console.log(findHCF(20, 36));
 # 4. Find the LCM (Least Common Multiple) of Two Numbers
 
 ```js
+function findHCF(a, b) {
+    let divisor = a < b ? a : b;
+    let dividend = a > b ? a : b;
+    let loopCount = 0
 
+    while (dividend % divisor !== 0) {
+        loopCount++
+        const remainder = dividend % divisor;
+        dividend = divisor
+        divisor = remainder
+    }
+
+    console.log({ loopCount });
+    return divisor
+
+}
+
+function findLCM(a,b){
+    return a*b / findHCF(a,b);
+}
+console.log(findLCM(20, 36));
 ```
