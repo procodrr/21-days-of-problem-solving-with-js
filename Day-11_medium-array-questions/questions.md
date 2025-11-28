@@ -1,4 +1,4 @@
-# 🎯 **Day 11 – Arrays (Advanced Algorithms)**
+# 🎯 **Day 11 – Medium Array Problems**
 
 ### 🧩 **Core Concept Focus**
 
@@ -12,7 +12,7 @@
 
 ### **1️⃣ Find Missing Number from Range 1 to N**
 
-- **Input:** `[1, 2, 4, 5]`
+- **Input:** `[1, 5, 2, 4]`
 - **Output:** `3`
 
 ---
