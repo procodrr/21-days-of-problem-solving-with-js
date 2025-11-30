@@ -27,7 +27,7 @@
 ### **3️⃣ Find the First Repeating Element in an Array**
 
 - **Input:** `[10, 5, 3, 4, 3, 5, 6]`
-- **Output:** `5`
+- **Output:** `3`
 
 ---
 
