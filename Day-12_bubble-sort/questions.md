@@ -1,4 +1,4 @@
-# 🎯 **Day 12 – Bubble Sort (Questions Only)**
+# 🎯 **Day 12 – Bubble Sort Questions**
 
 ---
 
@@ -34,7 +34,7 @@
 
 ---
 
-# 🏠 **Homework Questions (7)**
+# 🏠 **Homework Questions**
 
 ---
 
