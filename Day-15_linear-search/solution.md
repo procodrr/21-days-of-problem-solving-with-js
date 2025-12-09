@@ -6,7 +6,7 @@ function linearSearch(arr, el) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === el) {
       console.log(`Found ${el} at index ${i}`);
-      break;
+      return;
     }
   }
   console.log(`${el} does not exit in the given array.`);
