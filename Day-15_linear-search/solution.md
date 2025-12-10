@@ -38,13 +38,12 @@ console.log(linearSearchFirst([4, 2, 7, 1, 9], 8));
 
 ```js
 function linearSearchLast(arr, el) {
-  let lastIndex = -1;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === el) {
-      lastIndex = i;
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (el === arr[i]) {
+      return i;
     }
   }
-  return lastIndex;
+  return -1;
 }
 
 console.log(linearSearchLast([4, 3, 3, 1, 3, 1, 3], 3));

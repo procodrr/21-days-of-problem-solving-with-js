@@ -1,11 +1,3 @@
-#
-
-```js
-
-```
-
----
-
 # 1️⃣ Sort an Array in Ascending Order Using Bubble Sort
 
 ```js
