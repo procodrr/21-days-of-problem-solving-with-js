@@ -7,6 +7,7 @@
 const n = 25;
 
 function isAutomorphic(n) {
+    /*
     let square = n**2;
     while(n !== 0){
         let lastDigitOfN = Math.floor(n % 10);
@@ -20,6 +21,10 @@ function isAutomorphic(n) {
         square = Math.floor(square/10);
     }
     return true;
+    */
+    //O(k) TIME COMPLEXITY
+    const length = Math.floor(Math.log10(n)) + 1;
+    return n ** 2 % 10 ** length === n;
 }
 
 console.log(isAutomorphic(n))
