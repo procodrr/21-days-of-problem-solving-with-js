@@ -75,7 +75,7 @@ A composite number whose **sum of digits = sum of digits of prime factors**.
 
 Ugly numbers have only **2, 3, 5** as prime factors.
 
-- **Input:** `N = 18`
+- **Input:** `N = 11`
 - **Output:** `Not Ugly`
   (Because 18 → 2 × 3 × 3 → allowed)
 - **Input:** `N = 14`
