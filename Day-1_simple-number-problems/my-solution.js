@@ -8,6 +8,9 @@ for (let i = 1; i <= num; i++) {
 }
 
 //2. **Print Numbers from N to 1 without changing the loop condition of above question**
+console.log(
+  "2. Print Numbers from N to 1 without changing the loop condition of above question"
+);
 
 let inpt = 5;
 for (let i = inpt; i >= 1; i--) {
