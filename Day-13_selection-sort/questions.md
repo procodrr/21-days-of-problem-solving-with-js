@@ -39,7 +39,7 @@
 - **Input:** `[4, 2, 5, 3, 1]`
 - **Output:**  
   Pass 1 → min index = 4  
-  Pass 2 → min index = 3
+  Pass 2 → min index = 1
 
 ---
 
